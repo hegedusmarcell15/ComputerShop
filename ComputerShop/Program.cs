@@ -7,6 +7,8 @@ namespace ComputerShop
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            builder.Services.AddDbContext<Models.CmpShopDBContext>();
+
             // Add services to the container.
 
             builder.Services.AddControllers();
