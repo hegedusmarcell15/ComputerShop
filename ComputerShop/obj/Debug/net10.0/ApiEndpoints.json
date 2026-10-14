@@ -1,23 +1,118 @@
 [
   {
-    "ContainingType": "ComputerShop.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "AddComputer",
+    "RelativePath": "api/Computer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addNewComputerDto",
+        "Type": "ComputerShop.Models.AddNewComputerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "UpdateComputer",
+    "RelativePath": "api/Computer",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateComputerDto",
+        "Type": "ComputerShop.Models.UpdateComputerDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "DeleteComputer",
+    "RelativePath": "api/Computer",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetAllComputers",
+    "RelativePath": "api/Computer/GetAllComputers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.OsystemController",
+    "Method": "AddOsystem",
+    "RelativePath": "api/Osystem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ComputerShop.WeatherForecast, ComputerShop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "addNewOsystemDto",
+        "Type": "ComputerShop.Models.AddNewOsystemDto",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.OsystemController",
+    "Method": "UpdateOsystem",
+    "RelativePath": "api/Osystem",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateOsystemDto",
+        "Type": "ComputerShop.Models.UpdateOsystemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.OsystemController",
+    "Method": "DeleteOsystem",
+    "RelativePath": "api/Osystem",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.OsystemController",
+    "Method": "GetAllOsystems",
+    "RelativePath": "api/Osystem/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

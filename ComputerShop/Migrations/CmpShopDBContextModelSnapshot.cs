@@ -19,6 +19,38 @@ namespace ComputerShop.Migrations
                 .HasAnnotation("ProductVersion", "10.0.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("ComputerShop.Models.Computer", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(36)
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Brand")
+                        .HasColumnType("varchar(30)");
+
+                    b.Property<DateTime>("CreatedTime")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<float>("Display")
+                        .HasColumnType("float");
+
+                    b.Property<int>("Memory")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("OsysId")
+                        .HasColumnType("char(36)");
+
+                    b.Property<string>("Type")
+                        .HasColumnType("varchar(40)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OsysId");
+
+                    b.ToTable("Computers");
+                });
+
             modelBuilder.Entity("ComputerShop.Models.Osystem", b =>
                 {
                     b.Property<Guid>("Id")
@@ -42,6 +74,22 @@ namespace ComputerShop.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Osystems");
+                });
+
+            modelBuilder.Entity("ComputerShop.Models.Computer", b =>
+                {
+                    b.HasOne("ComputerShop.Models.Osystem", "Osys")
+                        .WithMany("Computers")
+                        .HasForeignKey("OsysId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Osys");
+                });
+
+            modelBuilder.Entity("ComputerShop.Models.Osystem", b =>
+                {
+                    b.Navigation("Computers");
                 });
 #pragma warning restore 612, 618
         }

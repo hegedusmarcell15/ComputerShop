@@ -5,7 +5,9 @@ namespace ComputerShop.Models
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class Add : ControllerBase
+    public class AddNewOsystemDto : ControllerBase
     {
+        public string Name { get; set; }
+        public int Version { get; set; }
     }
 }

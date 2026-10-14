@@ -44,7 +44,7 @@ namespace ComputerShop.Controllers
             }
             osystem.Name = updateOsystemDto.Name;
             osystem.Version = updateOsystemDto.Version;
-            osystem.UpdateTime = DateTime.UtcNow;
+            osystem.UpdateTime = DateTime.Now;
             context.SaveChanges();
             return new { message = "Osystem updated successfully", data = osystem };
         }
