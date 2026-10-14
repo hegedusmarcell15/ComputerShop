@@ -49,8 +49,184 @@
   },
   {
     "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetAllComputerByOs",
+    "RelativePath": "api/Computer/GetAllComputerByOs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
     "Method": "GetAllComputers",
     "RelativePath": "api/Computer/GetAllComputers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetBrandSummary",
+    "RelativePath": "api/Computer/GetBrandSummary",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetComputerByOs",
+    "RelativePath": "api/Computer/GetComputerByOs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "os",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetComputerOs",
+    "RelativePath": "api/Computer/GetComputerOs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetComputersByBrand",
+    "RelativePath": "api/Computer/GetComputersByBrand/{brand}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "brand",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetComputersByMinDisplay",
+    "RelativePath": "api/Computer/GetComputersByMinDisplay/{size}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "size",
+        "Type": "System.Double",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetComputersByOs",
+    "RelativePath": "api/Computer/GetComputersByOs/{osName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "osName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetComputersSorted",
+    "RelativePath": "api/Computer/GetComputersSorted",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetComputersWithoutOs",
+    "RelativePath": "api/Computer/GetComputersWithoutOs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetLargestMemoryComputerByOs",
+    "RelativePath": "api/Computer/GetLargestMemoryComputerByOs/{osName}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "osName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetLatestComputers",
+    "RelativePath": "api/Computer/GetLatestComputers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetOsComputerCount",
+    "RelativePath": "api/Computer/GetOsComputerCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetOsComputerCount2",
+    "RelativePath": "api/Computer/GetOsComputerCount2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ComputerShop.Controllers.ComputerController",
+    "Method": "GetOswithComputers",
+    "RelativePath": "api/Computer/GetOswithComputers",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
